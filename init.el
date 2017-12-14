@@ -327,7 +327,7 @@ you should place your code here."
   (setq org-agenda-file-note (expand-file-name "notes.org" org-agenda-dir))
   (setq org-agenda-file-gtd (expand-file-name "gtd.org" org-agenda-dir))
   (setq org-capture-templates
-        '(("t" "Todo" entry (file+headline org-agenda-file-gtd "Work Space")
+        '(("t" "Todo" entry (file+headline org-agenda-file-gtd "Normal")
             "* TODO [#B] %?\n  %i\n"
             :empty-lines 1)
           ("w" "Work" entry (file+headline org-agenda-file-gtd "Work")
