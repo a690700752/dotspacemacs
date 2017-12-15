@@ -302,9 +302,9 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq configuration-layer--elpa-archives
-      '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
-        ("org-cn"   . "http://elpa.emacs-china.org/org/")
-        ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
+        '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
+          ("org-cn"   . "http://elpa.emacs-china.org/org/")
+          ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
 
   (if (eq system-type 'windows-nt)
       (setq-default dotspacemacs-default-font
@@ -328,17 +328,17 @@ you should place your code here."
   (setq org-agenda-file-gtd (expand-file-name "gtd.org" org-agenda-dir))
   (setq org-capture-templates
         '(("t" "Todo" entry (file+headline org-agenda-file-gtd "Normal")
-            "* TODO [#B] %?\n  %i\n"
-            :empty-lines 1)
+           "* TODO [#B] %?\n  %i\n"
+           :empty-lines 1)
           ("w" "Work" entry (file+headline org-agenda-file-gtd "Work")
-            "* TODO [#A] %?\n  %i\n %U"
-            :empty-lines 1)
+           "* TODO [#A] %?\n  %i\n %U"
+           :empty-lines 1)
           ("n" "Notes" entry (file+headline org-agenda-file-note "Quick notes")
-            "* %?\n  %i\n %U"
-            :empty-lines 1)
+           "* %?\n  %i\n %U"
+           :empty-lines 1)
           ("i" "Ideas" entry (file+headline org-agenda-file-note "Ideas")
-            "* TODO [#B] %?\n  %i\n %U"
-            :empty-lines 1)))
+           "* TODO [#B] %?\n  %i\n %U"
+           :empty-lines 1)))
   )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
